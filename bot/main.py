@@ -1,20 +1,31 @@
-#!/usr/bin/env python
-
-import telebot
+from telegram.ext import Updater, CommandHandler
 from constants import TELEGRAM_BOT_TOKEN
-import handlers
+
+def start(update, context):
+    """Send a message when the command /start is issued."""
+    update.message.reply_text('Hi! Welcome to the Home Baked Goods Bot!')
 
 def main():
-    bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN)
+    """Start the bot."""
+    # Create the Updater and pass it your bot's token.
+    updater = Updater(TELEGRAM_BOT_TOKEN, use_context=True)
 
-    # Setup handlers
-    handlers.setup_handlers(bot)
+    # Get the dispatcher to register handlers
+    dp = updater.dispatcher
 
-    # Polling
-    bot.polling()
+    # Register a command handler
+    dp.add_handler(CommandHandler("start", start))
 
-if __name__ == "__main__":
+    # Start the Bot
+    updater.start_polling()
+
+    # Run the bot until you press Ctrl-C or the process receives SIGINT,
+    # SIGTERM or SIGABRT.
+    updater.idle()
+
+if __name__ == '__main__':
     main()
+
 
 
 
