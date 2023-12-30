@@ -1,16 +1,3 @@
-# Telegram Bot API wrapper
-pyTelegramBotAPI
-
-# Environment variable management
-python-dotenv
-
-# Database
-# SQLite is included in Python's standard library, so no need for an external package
-# If using another database like PostgreSQL or MySQL, include the appropriate adapter:
-# psycopg2-binary  # For PostgreSQL
-# mysqlclient      # For MySQL
-
-# Additional packages as needed
-# For example, if you're making HTTP requests:
-# requests
-
+python-telegram-bot==13.7
+requests==2.28.1
+python-dotenv==0.21.0
