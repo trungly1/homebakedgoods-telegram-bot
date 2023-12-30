@@ -8,7 +8,7 @@ ENV POSTGRES_USER=daschronos
 ENV POSTGRES_PASSWORD=Lightspeed123!
 
 # Optional: Initialize the database with a script
-# COPY init.sql /docker-entrypoint-initdb.d/
+COPY init.sql /docker-entrypoint-initdb.d/
 
 # Expose the port the DB runs on
 EXPOSE 5432
