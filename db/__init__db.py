@@ -1,9 +1,9 @@
 import psycopg2
 
 # Database connection parameters - adjust as necessary
-db_name = "db_name"
-db_user = "db_user"
-db_password = "your_password"
+db_name = "data"
+db_user = "daschronos"
+db_password = "Lightspeed123!"
 db_host = "localhost"
 
 # Connect to the PostgreSQL database

@@ -267,3 +267,4 @@ bot/config.properties
 config.properties
 homebakedgoods-telegram-bot.code-workspace
 docker/db.Dockerfile
+db/__init__db.py
