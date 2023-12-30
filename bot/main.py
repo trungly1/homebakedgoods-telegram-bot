@@ -8,7 +8,7 @@ def start(update, context):
 def main():
     """Start the bot."""
     # Create the Updater and pass it your bot's token.
-    updater = Updater(TELEGRAM_BOT_TOKEN, use_context=True)
+    updater = Updater(TELEGRAM_BOT_TOKEN)
 
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
@@ -25,7 +25,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-
