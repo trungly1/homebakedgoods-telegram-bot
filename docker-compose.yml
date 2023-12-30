@@ -11,7 +11,7 @@ services:
       - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
       # Other environment variables
     ports:
-      - "5000:5000" # Map port 5000 of the container to port 5000 on the host
+      - "6000:6000" # Map port 5000 of the container to port 5000 on the host
 
   db:
     image: postgres:latest
