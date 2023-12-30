@@ -3,9 +3,9 @@ FROM postgres:latest
 
 # Set environment variables for the database
 # Replace 'your_password' with a secure password
-ENV POSTGRES_DB=db_name
-ENV POSTGRES_USER=db_user
-ENV POSTGRES_PASSWORD=your_password
+ENV POSTGRES_DB=database
+ENV POSTGRES_USER=daschronos
+ENV POSTGRES_PASSWORD=Lightspeed123!
 
 # Optional: Initialize the database with a script
 # COPY init.sql /docker-entrypoint-initdb.d/
